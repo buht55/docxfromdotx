@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Body>
+    <ns2:createSmvGusPodgRazreshVvodExplV2Request xmlns:ns2="http://xsd.smev.ru/ppu/guszkh">
+      <ns2:smvGusPodgRazreshVvodExplV2>
+        <ns2:DocumentsToLand>
+          <ns2:smvSprgusPodgRazreshVvodExplV2DocumentsToLand>
+            <ns2:guid xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+            <ns2:pdzuAppliedDocumentId xmlns:fileRef="http://fs.sitex" fileRef:fileRef="gusfh:/721606940007/2018/04/19/НИОКР_39.pdf" />
+            <ns2:timeStamp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+            <ns2:createDate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+          </ns2:smvSprgusPodgRazreshVvodExplV2DocumentsToLand>
+        </ns2:DocumentsToLand>
+        <ns2:OName>1</ns2:OName>
+        <ns2:EMail>ulcha94@list.ru</ns2:EMail>
+        <ns2:GettingResultWay>3</ns2:GettingResultWay>
+        <ns2:ZAKAppliedDocuments>
+          <ns2:smvSprgusPodgRazreshVvodExplV2ZAKAppliedDocuments>
+            <ns2:ZAKDocumentDate>2018-04-02</ns2:ZAKDocumentDate>
+            <ns2:ZAKDocumentNumber>1</ns2:ZAKDocumentNumber>
+            <ns2:guid xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+            <ns2:timeStamp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+            <ns2:createDate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+            <ns2:ZAKNameIssuingAuthority>1</ns2:ZAKNameIssuingAuthority>
+            <ns2:ZAKAppliedDocumentId xmlns:fileRef="http://fs.sitex" fileRef:fileRef="gusfh:/721606940007/2018/04/19/НИОКР_47.pdf" />
+          </ns2:smvSprgusPodgRazreshVvodExplV2ZAKAppliedDocuments>
+        </ns2:ZAKAppliedDocuments>
+        <ns2:ZAKBuildingSupervision>false</ns2:ZAKBuildingSupervision>
+        <ns2:Type>1</ns2:Type>
+        <ns2:ECOAppliedDocuments>
+          <ns2:smvSprgusPodgRazreshVvodExplV2ECOAppliedDocuments>
+            <ns2:ECOAppliedDocumentId xmlns:fileRef="http://fs.sitex" fileRef:fileRef="gusfh:/721606940007/2018/04/19/НИОКР_48.pdf" />
+            <ns2:guid xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+            <ns2:ECODocumentNumber>1</ns2:ECODocumentNumber>
+            <ns2:timeStamp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+            <ns2:createDate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+            <ns2:ECODocumentDate>2018-04-02</ns2:ECODocumentDate>
+          </ns2:smvSprgusPodgRazreshVvodExplV2ECOAppliedDocuments>
+        </ns2:ECOAppliedDocuments>
+        <ns2:senderFio>Иванова Юлия Андреевна</ns2:senderFio>
+        <ns2:ogrn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+        <ns2:targetCode>receptionOfAppealsCitizensDTCP</ns2:targetCode>
+        <ns2:BUPDocumentDate>2018-04-09</ns2:BUPDocumentDate>
+        <ns2:LastName>Иванова</ns2:LastName>
+        <ns2:ACTAppliedDocuments>
+          <ns2:smvSprgusPodgRazreshVvodExplV2ACTAppliedDocuments>
+            <ns2:guid xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+            <ns2:ACTAppliedDocumentID xmlns:fileRef="http://fs.sitex" fileRef:fileRef="gusfh:/721606940007/2018/04/19/НИОКР_42.pdf" />
+            <ns2:timeStamp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+            <ns2:createDate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+          </ns2:smvSprgusPodgRazreshVvodExplV2ACTAppliedDocuments>
+        </ns2:ACTAppliedDocuments>
+        <ns2:CXAppliedCheck>true</ns2:CXAppliedCheck>
+        <ns2:MFC>1</ns2:MFC>
+        <ns2:BorderLocationDescription>
+          <ns2:smvSprgusPodgRazreshVvodExplV2BorderLocationDescription>
+            <ns2:guid xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+            <ns2:BorderLocationDescriptionFile xmlns:fileRef="http://fs.sitex" fileRef:fileRef="gusfh:/721606940007/2018/04/19/НИОКР_51.pdf" />
+            <ns2:timeStamp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+            <ns2:createDate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+          </ns2:smvSprgusPodgRazreshVvodExplV2BorderLocationDescription>
+        </ns2:BorderLocationDescription>
+        <ns2:FirstName>Юлия</ns2:FirstName>
+        <ns2:CXAppliedDocumentId xmlns:fileRef="http://fs.sitex" fileRef:fileRef="gusfh:/721606940007/2018/04/19/НИОКР_47.pdf" />
+        <ns2:login>721606940007</ns2:login>
+        <ns2:BUPDocumentFile xmlns:fileRef="http://fs.sitex" fileRef:fileRef="gusfh:/721606940007/2018/04/19/НИОКР_42.pdf" />
+        <ns2:kadastrNum>1</ns2:kadastrNum>
+        <ns2:ServiceProviderUID>18</ns2:ServiceProviderUID>
+        <ns2:ProjectsPlanning>
+          <ns2:smvSprgusPodgRazreshVvodExplV2ProjectsPlanning>
+            <ns2:guid xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+            <ns2:ProjectPlanning xmlns:fileRef="http://fs.sitex" fileRef:fileRef="gusfh:/721606940007/2018/04/19/НИОКР_41.pdf" />
+            <ns2:timeStamp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+            <ns2:createDate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+          </ns2:smvSprgusPodgRazreshVvodExplV2ProjectsPlanning>
+        </ns2:ProjectsPlanning>
+        <ns2:PhoneNumber1 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+        <ns2:BUPNameIssuingAuthority>1</ns2:BUPNameIssuingAuthority>
+        <ns2:BUPDocumentNumber>1</ns2:BUPDocumentNumber>
+        <ns2:ECOAppliedCheck>true</ns2:ECOAppliedCheck>
+        <ns2:RegisteredAddress>Россия (644086, Омская обл, г Омск, округ Центральный, ул Багратиона, д. 21, к. а, кв. 46)</ns2:RegisteredAddress>
+        <ns2:IsAttorneyInCharge>true</ns2:IsAttorneyInCharge>
+        <ns2:PhoneNumber>9620345208</ns2:PhoneNumber>
+        <ns2:LegalAddress xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+        <ns2:OBuildingAddress>1</ns2:OBuildingAddress>
+        <ns2:UrbanPlansForLand>
+          <ns2:smvSprgusPodgRazreshVvodExplV2UrbanPlansForLand>
+            <ns2:guid xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+            <ns2:UrbanPlanForLand xmlns:fileRef="http://fs.sitex" fileRef:fileRef="gusfh:/721606940007/2018/04/19/НИОКР_40.pdf" />
+            <ns2:timeStamp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+            <ns2:createDate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+          </ns2:smvSprgusPodgRazreshVvodExplV2UrbanPlansForLand>
+        </ns2:UrbanPlansForLand>
+        <ns2:SProjAppliedDocuments>
+          <ns2:smvSprgusPodgRazreshVvodExplV2SProjAppliedDocuments>
+            <ns2:SProjAppliedDocumentId xmlns:fileRef="http://fs.sitex" fileRef:fileRef="gusfh:/721606940007/2018/04/19/НИОКР_44.pdf" />
+            <ns2:guid xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+            <ns2:timeStamp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+            <ns2:createDate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+          </ns2:smvSprgusPodgRazreshVvodExplV2SProjAppliedDocuments>
+        </ns2:SProjAppliedDocuments>
+        <ns2:OrganizationName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+        <ns2:recipientOrg>
+          <sxp1:serviceOrgCode xmlns:sxp1="http://tura.tyumen.ru/xsd/ppu">7200000010000068028</sxp1:serviceOrgCode>
+        </ns2:recipientOrg>
+        <ns2:STRAXIsDocProvidedByLaw>true</ns2:STRAXIsDocProvidedByLaw>
+        <ns2:STRAXAppliedDocuments>
+          <ns2:smvSprgusPodgRazreshVvodExplV2STRAXAppliedDocuments>
+            <ns2:guid xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+            <ns2:STRAXAppliedDocumentId xmlns:fileRef="http://fs.sitex" fileRef:fileRef="gusfh:/721606940007/2018/04/19/НИОКР_49.pdf" />
+            <ns2:timeStamp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+            <ns2:createDate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+          </ns2:smvSprgusPodgRazreshVvodExplV2STRAXAppliedDocuments>
+        </ns2:STRAXAppliedDocuments>
+        <ns2:TechnicalConditionsOKSDocs>
+          <ns2:smvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocs>
+            <ns2:guid>1951155</ns2:guid>
+            <ns2:TechnicalConditionsOKSDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+            <ns2:timeStamp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+            <ns2:createDate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+          </ns2:smvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocs>
+        </ns2:TechnicalConditionsOKSDocs>
+        <ns2:Attorney xmlns:fileRef="http://fs.sitex" fileRef:fileRef="gusfh:/721606940007/2018/04/19/НИОКР_38.pdf" />
+        <ns2:TPAppliedDocuments>
+          <ns2:smvSprgusPodgRazreshVvodExplV2TPAppliedDocuments>
+            <ns2:guid xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+            <ns2:TPAppliedDocumentId xmlns:fileRef="http://fs.sitex" fileRef:fileRef="gusfh:/721606940007/2018/04/19/НИОКР_50.pdf" />
+            <ns2:timeStamp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+            <ns2:createDate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+          </ns2:smvSprgusPodgRazreshVvodExplV2TPAppliedDocuments>
+        </ns2:TPAppliedDocuments>
+        <ns2:SRegAppliedDocuments>
+          <ns2:smvSprgusPodgRazreshVvodExplV2SRegAppliedDocuments>
+            <ns2:guid xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+            <ns2:SRegAppliedDocumentId xmlns:fileRef="http://fs.sitex" fileRef:fileRef="gusfh:/721606940007/2018/04/19/НИОКР_43.pdf" />
+            <ns2:timeStamp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+            <ns2:createDate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+          </ns2:smvSprgusPodgRazreshVvodExplV2SRegAppliedDocuments>
+        </ns2:SRegAppliedDocuments>
+        <ns2:EMail1 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+        <ns2:applicant>721606940007</ns2:applicant>
+        <ns2:ACTIsConstructionBasedOnAgr>true</ns2:ACTIsConstructionBasedOnAgr>
+        <ns2:senderSnils>15429406869</ns2:senderSnils>
+        <ns2:SecondName>Андреевна</ns2:SecondName>
+      </ns2:smvGusPodgRazreshVvodExplV2>
+    </ns2:createSmvGusPodgRazreshVvodExplV2Request>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

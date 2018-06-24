@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:impl="http://sys.smev.ru/xsd/smevppu" xmlns:intf="http://sys.smev.ru/xsd/smevppu" xmlns:tns1="http://tura.tyumen.ru/xsd/ppu" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://sys.smev.ru/xsd/smevppu">
+    <import namespace="http://tura.tyumen.ru/xsd/ppu" schemaLocation="rv?xsd=ppuservice.jws.xsd"/>
+    <complexType name="smevPetitionStatus">
+        <annotation>
+            <documentation>Статус заявления</documentation>
+        </annotation>
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="title" nillable="true" type="xsd:string">
+                <!--Mandatory in create operation-->
+                <annotation>
+                    <documentation>Название</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="code" type="xsd:string">
+                <!--Mandatory in create operation-->
+                <annotation>
+                    <documentation>Код</documentation>
+                </annotation>
+            </element>
+        </sequence>
+    </complexType>
+    <complexType name="smevDocBase">
+        <annotation>
+            <documentation>Базовый документ</documentation>
+        </annotation>
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="docTypeCode" nillable="true" type="xsd:string">
+                <annotation>
+                    <documentation>Код типа документа</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="ouid" nillable="true" type="xsd:int">
+                <annotation>
+                    <documentation>Идентификатор объекта</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="guid" type="xsd:string">
+                <annotation>
+                    <documentation>Глобальный идентификатор</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="systemClass" nillable="true" type="xsd:string">
+                <annotation>
+                    <documentation>Тип документа</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="timeStamp" nillable="true" type="xsd:dateTime">
+                <annotation>
+                    <documentation>Дата модификации</documentation>
+                </annotation>
+            </element>
+        </sequence>
+    </complexType>
+    <complexType name="ArrayOfsmevDocBase">
+        <sequence>
+            <element maxOccurs="unbounded" minOccurs="0" name="smevDocBase" type="impl:smevDocBase"/>
+        </sequence>
+    </complexType>
+    <complexType name="smevDocType">
+        <annotation>
+            <documentation>Тип документа</documentation>
+        </annotation>
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="guid" type="xsd:string">
+                <annotation>
+                    <documentation>Глобальный идентификатор</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="timeStamp" nillable="true" type="xsd:dateTime">
+                <annotation>
+                    <documentation>Дата модификации</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="description" nillable="true" type="xsd:string">
+                <annotation>
+                    <documentation>Описание</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="name" nillable="true" type="xsd:string">
+                <!--Mandatory in create operation-->
+                <annotation>
+                    <documentation>Название</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="clsImpl" nillable="true" type="xsd:string">
+                <!--Mandatory in create operation-->
+                <annotation>
+                    <documentation>Класс-реализация</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="ouid" nillable="true" type="xsd:int">
+                <annotation>
+                    <documentation>Идентификатор объекта</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="code" nillable="true" type="xsd:string">
+                <!--Mandatory in create operation-->
+                <annotation>
+                    <documentation>Код</documentation>
+                </annotation>
+            </element>
+        </sequence>
+    </complexType>
+    <complexType name="ArrayOfsmevDocType">
+        <sequence>
+            <element maxOccurs="unbounded" minOccurs="0" name="smevDocType" type="impl:smevDocType"/>
+        </sequence>
+    </complexType>
+    <complexType name="smevResolutionDesc">
+        <annotation>
+            <documentation>Описание резолюции</documentation>
+        </annotation>
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="ouid" type="xsd:int">
+                <annotation>
+                    <documentation>Идентификатор объекта</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="result" nillable="true" type="xsd:string">
+                <annotation>
+                    <documentation>Результат</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="docTypes" nillable="true" type="impl:ArrayOfsmevDocType">
+                <annotation>
+                    <documentation>Документы</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="timeStamp" nillable="true" type="xsd:dateTime">
+                <annotation>
+                    <documentation>Дата модификации</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="name" nillable="true" type="xsd:string">
+                <!--Mandatory in create operation-->
+                <annotation>
+                    <documentation>Название</documentation>
+                </annotation>
+            </element>
+        </sequence>
+    </complexType>
+    <complexType name="smevResolution">
+        <annotation>
+            <documentation>Резолюция</documentation>
+        </annotation>
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="ouid" nillable="true" type="xsd:int">
+                <annotation>
+                    <documentation>Идентификатор объекта</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="guid" type="xsd:string">
+                <annotation>
+                    <documentation>Глобальный идентификатор</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="systemClass" nillable="true" type="xsd:string">
+                <annotation>
+                    <documentation>Тип документа</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="timeStamp" nillable="true" type="xsd:dateTime">
+                <annotation>
+                    <documentation>Дата модификации</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="docs" nillable="true" type="impl:ArrayOfsmevDocBase">
+                <!--Mandatory in create operation-->
+                <annotation>
+                    <documentation>Документы</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="description" nillable="true" type="impl:smevResolutionDesc">
+                <!--Mandatory in create operation-->
+                <annotation>
+                    <documentation>Описание</documentation>
+                </annotation>
+            </element>
+        </sequence>
+    </complexType>
+    <complexType name="smevPetitionStatusChange">
+        <annotation>
+            <documentation>История изменения статусов заявления</documentation>
+        </annotation>
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="petId" nillable="true" type="xsd:string">
+                <annotation>
+                    <documentation>Идентификатор заявления</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="newValue" nillable="true" type="impl:smevPetitionStatus">
+                <annotation>
+                    <documentation>Новое значение статуса</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="editor" nillable="true" type="tns1:SD_Employee">
+                <annotation>
+                    <documentation>Ответственный исполнитель</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="newValueCode" nillable="true" type="xsd:string">
+                <annotation>
+                    <documentation>Код нового значения статуса</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="ts" nillable="true" type="xsd:dateTime">
+                <annotation>
+                    <documentation>Дата модификации</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="ouid" type="xsd:int">
+                <!--Mandatory in create operation-->
+                <annotation>
+                    <documentation>Идентификатор</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="comment" nillable="true" type="xsd:string">
+                <annotation>
+                    <documentation>Комментарий</documentation>
+                </annotation>
+            </element>
+        </sequence>
+    </complexType>
+    <complexType name="ArrayOfsmevPetitionStatusChange">
+        <sequence>
+            <element maxOccurs="unbounded" minOccurs="0" name="smevPetitionStatusChange" type="impl:smevPetitionStatusChange"/>
+        </sequence>
+    </complexType>
+    <complexType name="smevPetitionBase">
+        <annotation>
+            <documentation>Базовое заявление</documentation>
+        </annotation>
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="applicantsEcp" nillable="true" type="tns1:ArrayOfsedECP">
+                <annotation>
+                    <documentation>В данной таблице хранятся подписи заявителей</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="startDate" nillable="true" type="xsd:dateTime">
+                <annotation>
+                    <documentation>Дата подачи документов</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="crOwner" nillable="true" type="xsd:string">
+                <annotation>
+                    <documentation>Автор</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="timeStamp" nillable="true" type="xsd:dateTime">
+                <annotation>
+                    <documentation>Дата модификации</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="executor" nillable="true" type="tns1:egPosition">
+                <annotation>
+                    <documentation>Ответственный</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="senderFio" nillable="true" type="xsd:string">
+                <annotation>
+                    <documentation>ФИО подателя</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="state" nillable="true" type="impl:smevPetitionStatus">
+                <!--Mandatory in create operation-->
+                <annotation>
+                    <documentation>Состояние</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="targetCode" nillable="true" type="xsd:string">
+                <annotation>
+                    <documentation>Код цели получения услуги</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="number" nillable="true" type="xsd:string">
+                <annotation>
+                    <documentation>Регистрационный номер</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="resolution" nillable="true" type="impl:smevResolution">
+                <annotation>
+                    <documentation>Резолюция</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="caseNumber" nillable="true" type="xsd:string">
+                <annotation>
+                    <documentation>Номер во внешней системе</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="workEndDate" nillable="true" type="xsd:dateTime">
+                <annotation>
+                    <documentation>Срок окончания обработки</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="isNeedOriginal" nillable="true" type="xsd:boolean">
+                <annotation>
+                    <documentation>Требуются оригиналы</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="history" nillable="true" type="impl:ArrayOfsmevPetitionStatusChange">
+                <annotation>
+                    <documentation>История обработки заявления</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="recipientOrg" nillable="true" type="tns1:egOrganization">
+                <annotation>
+                    <documentation>Ведомство-получатель</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="guid" type="xsd:string">
+                <annotation>
+                    <documentation>Глобальный идентификатор</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="petCode" nillable="true" type="xsd:string">
+                <annotation>
+                    <documentation>Код типа заявления</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="rguCodeOrg" nillable="true" type="xsd:string">
+                <annotation>
+                    <documentation>Код отправителя ФСМЭВ</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="applicant" nillable="true" type="xsd:string">
+                <annotation>
+                    <documentation>Заявитель</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="ouid" nillable="true" type="xsd:int">
+                <!--Mandatory in create operation-->
+                <annotation>
+                    <documentation>Идентификатор объекта</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="workStartDate" nillable="true" type="xsd:date">
+                <annotation>
+                    <documentation>Дата принятия в работу</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="login" nillable="true" type="xsd:string">
+                <annotation>
+                    <documentation>Логин пользователя, подавшего заявления с лк</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="systemClass" nillable="true" type="xsd:string">
+                <annotation>
+                    <documentation>Тип заявления</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="createDate" nillable="true" type="xsd:dateTime">
+                <annotation>
+                    <documentation>Дата создания</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="senderSnils" nillable="true" type="xsd:string">
+                <annotation>
+                    <documentation>СНИЛС подателя</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="ecp" nillable="true" type="tns1:extEcp">
+                <annotation>
+                    <documentation>ЭП заявителя</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="partDocs" nillable="true" type="xsd:boolean">
+                <annotation>
+                    <documentation>Неполный комплект документов из МФЦ</documentation>
+                </annotation>
+            </element>
+        </sequence>
+    </complexType>
+    <complexType name="ArrayOfsmevPetitionBase">
+        <sequence>
+            <element maxOccurs="unbounded" minOccurs="0" name="smevPetitionBase" type="impl:smevPetitionBase"/>
+        </sequence>
+    </complexType>
+    <complexType name="getSmevPetitionBaseRequest">
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="limit" nillable="true" type="xsd:int"/>
+            <element maxOccurs="1" minOccurs="0" name="offset" nillable="true" type="xsd:int"/>
+            <element maxOccurs="1" minOccurs="0" name="CondOfsmevPetitionBase" nillable="true" type="impl:ArrayOfsmevPetitionBase"/>
+            <element maxOccurs="1" minOccurs="0" name="order" nillable="true" type="xsd:string"/>
+        </sequence>
+    </complexType>
+    <element name="getSmevPetitionBaseRequest" type="impl:getSmevPetitionBaseRequest"/>
+    <complexType name="getSmevPetitionBaseResponse">
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="ArrayOfsmevPetitionBase" type="impl:ArrayOfsmevPetitionBase"/>
+            <element maxOccurs="1" minOccurs="0" name="total" nillable="true" type="xsd:int"/>
+        </sequence>
+    </complexType>
+    <element name="getSmevPetitionBaseResponse" type="impl:getSmevPetitionBaseResponse"/>
+    <complexType name="findSmevPetitionBaseRequest">
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="limit" nillable="true" type="xsd:int"/>
+            <element maxOccurs="1" minOccurs="0" name="offset" nillable="true" type="xsd:int"/>
+            <element maxOccurs="1" minOccurs="0" name="order" nillable="true" type="xsd:string"/>
+            <element maxOccurs="1" minOccurs="0" name="condition" nillable="true" type="xsd:string"/>
+        </sequence>
+    </complexType>
+    <element name="findSmevPetitionBaseRequest" type="impl:findSmevPetitionBaseRequest"/>
+    <complexType name="findSmevPetitionBaseResponse">
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="ArrayOfsmevPetitionBase" type="impl:ArrayOfsmevPetitionBase"/>
+            <element maxOccurs="1" minOccurs="0" name="total" nillable="true" type="xsd:int"/>
+        </sequence>
+    </complexType>
+    <element name="findSmevPetitionBaseResponse" type="impl:findSmevPetitionBaseResponse"/>
+    <complexType name="ArrayOfsmevResolution">
+        <sequence>
+            <element maxOccurs="unbounded" minOccurs="0" name="smevResolution" type="impl:smevResolution"/>
+        </sequence>
+    </complexType>
+    <complexType name="getSmevResolutionRequest">
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="limit" nillable="true" type="xsd:int"/>
+            <element maxOccurs="1" minOccurs="0" name="offset" nillable="true" type="xsd:int"/>
+            <element maxOccurs="1" minOccurs="0" name="CondOfsmevResolution" nillable="true" type="impl:ArrayOfsmevResolution"/>
+            <element maxOccurs="1" minOccurs="0" name="order" nillable="true" type="xsd:string"/>
+        </sequence>
+    </complexType>
+    <element name="getSmevResolutionRequest" type="impl:getSmevResolutionRequest"/>
+    <complexType name="getSmevResolutionResponse">
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="ArrayOfsmevResolution" type="impl:ArrayOfsmevResolution"/>
+            <element maxOccurs="1" minOccurs="0" name="total" nillable="true" type="xsd:int"/>
+        </sequence>
+    </complexType>
+    <element name="getSmevResolutionResponse" type="impl:getSmevResolutionResponse"/>
+    <complexType name="findSmevResolutionRequest">
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="limit" nillable="true" type="xsd:int"/>
+            <element maxOccurs="1" minOccurs="0" name="offset" nillable="true" type="xsd:int"/>
+            <element maxOccurs="1" minOccurs="0" name="order" nillable="true" type="xsd:string"/>
+            <element maxOccurs="1" minOccurs="0" name="condition" nillable="true" type="xsd:string"/>
+        </sequence>
+    </complexType>
+    <element name="findSmevResolutionRequest" type="impl:findSmevResolutionRequest"/>
+    <complexType name="findSmevResolutionResponse">
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="ArrayOfsmevResolution" type="impl:ArrayOfsmevResolution"/>
+            <element maxOccurs="1" minOccurs="0" name="total" nillable="true" type="xsd:int"/>
+        </sequence>
+    </complexType>
+    <element name="findSmevResolutionResponse" type="impl:findSmevResolutionResponse"/>
+    <complexType name="getSmevDocBaseRequest">
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="limit" nillable="true" type="xsd:int"/>
+            <element maxOccurs="1" minOccurs="0" name="offset" nillable="true" type="xsd:int"/>
+            <element maxOccurs="1" minOccurs="0" name="CondOfsmevDocBase" nillable="true" type="impl:ArrayOfsmevDocBase"/>
+            <element maxOccurs="1" minOccurs="0" name="order" nillable="true" type="xsd:string"/>
+        </sequence>
+    </complexType>
+    <element name="getSmevDocBaseRequest" type="impl:getSmevDocBaseRequest"/>
+    <complexType name="getSmevDocBaseResponse">
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="ArrayOfsmevDocBase" type="impl:ArrayOfsmevDocBase"/>
+            <element maxOccurs="1" minOccurs="0" name="total" nillable="true" type="xsd:int"/>
+        </sequence>
+    </complexType>
+    <element name="getSmevDocBaseResponse" type="impl:getSmevDocBaseResponse"/>
+    <complexType name="findSmevDocBaseRequest">
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="limit" nillable="true" type="xsd:int"/>
+            <element maxOccurs="1" minOccurs="0" name="offset" nillable="true" type="xsd:int"/>
+            <element maxOccurs="1" minOccurs="0" name="order" nillable="true" type="xsd:string"/>
+            <element maxOccurs="1" minOccurs="0" name="condition" nillable="true" type="xsd:string"/>
+        </sequence>
+    </complexType>
+    <element name="findSmevDocBaseRequest" type="impl:findSmevDocBaseRequest"/>
+    <complexType name="findSmevDocBaseResponse">
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="ArrayOfsmevDocBase" type="impl:ArrayOfsmevDocBase"/>
+            <element maxOccurs="1" minOccurs="0" name="total" nillable="true" type="xsd:int"/>
+        </sequence>
+    </complexType>
+    <element name="findSmevDocBaseResponse" type="impl:findSmevDocBaseResponse"/>
+    <complexType name="ArrayOfsmevResolutionDesc">
+        <sequence>
+            <element maxOccurs="unbounded" minOccurs="0" name="smevResolutionDesc" type="impl:smevResolutionDesc"/>
+        </sequence>
+    </complexType>
+    <complexType name="getSmevResolutionDescRequest">
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="limit" nillable="true" type="xsd:int"/>
+            <element maxOccurs="1" minOccurs="0" name="offset" nillable="true" type="xsd:int"/>
+            <element maxOccurs="1" minOccurs="0" name="CondOfsmevResolutionDesc" nillable="true" type="impl:ArrayOfsmevResolutionDesc"/>
+            <element maxOccurs="1" minOccurs="0" name="order" nillable="true" type="xsd:string"/>
+        </sequence>
+    </complexType>
+    <element name="getSmevResolutionDescRequest" type="impl:getSmevResolutionDescRequest"/>
+    <complexType name="getSmevResolutionDescResponse">
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="ArrayOfsmevResolutionDesc" type="impl:ArrayOfsmevResolutionDesc"/>
+            <element maxOccurs="1" minOccurs="0" name="total" nillable="true" type="xsd:int"/>
+        </sequence>
+    </complexType>
+    <element name="getSmevResolutionDescResponse" type="impl:getSmevResolutionDescResponse"/>
+    <complexType name="findSmevResolutionDescRequest">
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="limit" nillable="true" type="xsd:int"/>
+            <element maxOccurs="1" minOccurs="0" name="offset" nillable="true" type="xsd:int"/>
+            <element maxOccurs="1" minOccurs="0" name="order" nillable="true" type="xsd:string"/>
+            <element maxOccurs="1" minOccurs="0" name="condition" nillable="true" type="xsd:string"/>
+        </sequence>
+    </complexType>
+    <element name="findSmevResolutionDescRequest" type="impl:findSmevResolutionDescRequest"/>
+    <complexType name="findSmevResolutionDescResponse">
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="ArrayOfsmevResolutionDesc" type="impl:ArrayOfsmevResolutionDesc"/>
+            <element maxOccurs="1" minOccurs="0" name="total" nillable="true" type="xsd:int"/>
+        </sequence>
+    </complexType>
+    <element name="findSmevResolutionDescResponse" type="impl:findSmevResolutionDescResponse"/>
+    <complexType name="getSmevDocTypeRequest">
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="limit" nillable="true" type="xsd:int"/>
+            <element maxOccurs="1" minOccurs="0" name="offset" nillable="true" type="xsd:int"/>
+            <element maxOccurs="1" minOccurs="0" name="CondOfsmevDocType" nillable="true" type="impl:ArrayOfsmevDocType"/>
+            <element maxOccurs="1" minOccurs="0" name="order" nillable="true" type="xsd:string"/>
+        </sequence>
+    </complexType>
+    <element name="getSmevDocTypeRequest" type="impl:getSmevDocTypeRequest"/>
+    <complexType name="getSmevDocTypeResponse">
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="ArrayOfsmevDocType" type="impl:ArrayOfsmevDocType"/>
+            <element maxOccurs="1" minOccurs="0" name="total" nillable="true" type="xsd:int"/>
+        </sequence>
+    </complexType>
+    <element name="getSmevDocTypeResponse" type="impl:getSmevDocTypeResponse"/>
+    <complexType name="findSmevDocTypeRequest">
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="limit" nillable="true" type="xsd:int"/>
+            <element maxOccurs="1" minOccurs="0" name="offset" nillable="true" type="xsd:int"/>
+            <element maxOccurs="1" minOccurs="0" name="order" nillable="true" type="xsd:string"/>
+            <element maxOccurs="1" minOccurs="0" name="condition" nillable="true" type="xsd:string"/>
+        </sequence>
+    </complexType>
+    <element name="findSmevDocTypeRequest" type="impl:findSmevDocTypeRequest"/>
+    <complexType name="findSmevDocTypeResponse">
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="ArrayOfsmevDocType" type="impl:ArrayOfsmevDocType"/>
+            <element maxOccurs="1" minOccurs="0" name="total" nillable="true" type="xsd:int"/>
+        </sequence>
+    </complexType>
+    <element name="findSmevDocTypeResponse" type="impl:findSmevDocTypeResponse"/>
+    <complexType name="ArrayOfsmevPetitionStatus">
+        <sequence>
+            <element maxOccurs="unbounded" minOccurs="0" name="smevPetitionStatus" type="impl:smevPetitionStatus"/>
+        </sequence>
+    </complexType>
+    <complexType name="getSmevPetitionStatusRequest">
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="limit" nillable="true" type="xsd:int"/>
+            <element maxOccurs="1" minOccurs="0" name="offset" nillable="true" type="xsd:int"/>
+            <element maxOccurs="1" minOccurs="0" name="CondOfsmevPetitionStatus" nillable="true" type="impl:ArrayOfsmevPetitionStatus"/>
+            <element maxOccurs="1" minOccurs="0" name="order" nillable="true" type="xsd:string"/>
+        </sequence>
+    </complexType>
+    <element name="getSmevPetitionStatusRequest" type="impl:getSmevPetitionStatusRequest"/>
+    <complexType name="getSmevPetitionStatusResponse">
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="ArrayOfsmevPetitionStatus" type="impl:ArrayOfsmevPetitionStatus"/>
+            <element maxOccurs="1" minOccurs="0" name="total" nillable="true" type="xsd:int"/>
+        </sequence>
+    </complexType>
+    <element name="getSmevPetitionStatusResponse" type="impl:getSmevPetitionStatusResponse"/>
+    <complexType name="findSmevPetitionStatusRequest">
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="limit" nillable="true" type="xsd:int"/>
+            <element maxOccurs="1" minOccurs="0" name="offset" nillable="true" type="xsd:int"/>
+            <element maxOccurs="1" minOccurs="0" name="order" nillable="true" type="xsd:string"/>
+            <element maxOccurs="1" minOccurs="0" name="condition" nillable="true" type="xsd:string"/>
+        </sequence>
+    </complexType>
+    <element name="findSmevPetitionStatusRequest" type="impl:findSmevPetitionStatusRequest"/>
+    <complexType name="findSmevPetitionStatusResponse">
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="ArrayOfsmevPetitionStatus" type="impl:ArrayOfsmevPetitionStatus"/>
+            <element maxOccurs="1" minOccurs="0" name="total" nillable="true" type="xsd:int"/>
+        </sequence>
+    </complexType>
+    <element name="findSmevPetitionStatusResponse" type="impl:findSmevPetitionStatusResponse"/>
+    <complexType name="getSmevPetitionStatusChangeRequest">
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="limit" nillable="true" type="xsd:int"/>
+            <element maxOccurs="1" minOccurs="0" name="offset" nillable="true" type="xsd:int"/>
+            <element maxOccurs="1" minOccurs="0" name="CondOfsmevPetitionStatusChange" nillable="true" type="impl:ArrayOfsmevPetitionStatusChange"/>
+            <element maxOccurs="1" minOccurs="0" name="order" nillable="true" type="xsd:string"/>
+        </sequence>
+    </complexType>
+    <element name="getSmevPetitionStatusChangeRequest" type="impl:getSmevPetitionStatusChangeRequest"/>
+    <complexType name="getSmevPetitionStatusChangeResponse">
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="ArrayOfsmevPetitionStatusChange" type="impl:ArrayOfsmevPetitionStatusChange"/>
+            <element maxOccurs="1" minOccurs="0" name="total" nillable="true" type="xsd:int"/>
+        </sequence>
+    </complexType>
+    <element name="getSmevPetitionStatusChangeResponse" type="impl:getSmevPetitionStatusChangeResponse"/>
+    <complexType name="findSmevPetitionStatusChangeRequest">
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="limit" nillable="true" type="xsd:int"/>
+            <element maxOccurs="1" minOccurs="0" name="offset" nillable="true" type="xsd:int"/>
+            <element maxOccurs="1" minOccurs="0" name="order" nillable="true" type="xsd:string"/>
+            <element maxOccurs="1" minOccurs="0" name="condition" nillable="true" type="xsd:string"/>
+        </sequence>
+    </complexType>
+    <element name="findSmevPetitionStatusChangeRequest" type="impl:findSmevPetitionStatusChangeRequest"/>
+    <complexType name="findSmevPetitionStatusChangeResponse">
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="ArrayOfsmevPetitionStatusChange" type="impl:ArrayOfsmevPetitionStatusChange"/>
+            <element maxOccurs="1" minOccurs="0" name="total" nillable="true" type="xsd:int"/>
+        </sequence>
+    </complexType>
+    <element name="findSmevPetitionStatusChangeResponse" type="impl:findSmevPetitionStatusChangeResponse"/>
+    <simpleType name="smevServiceTerritorialIndicationSXEnum">
+        <annotation>
+            <documentation>Территориальный признак</documentation>
+        </annotation>
+        <restriction base="xsd:string">
+            <enumeration value="f">
+                <annotation>
+                    <documentation>Федеральный</documentation>
+                </annotation>
+            </enumeration>
+            <enumeration value="r">
+                <annotation>
+                    <documentation>Региональный</documentation>
+                </annotation>
+            </enumeration>
+            <enumeration value="m">
+                <annotation>
+                    <documentation>Муниципальный</documentation>
+                </annotation>
+            </enumeration>
+        </restriction>
+    </simpleType>
+    <simpleType name="smevServiceTypeSXEnum">
+        <annotation>
+            <documentation>Тип</documentation>
+        </annotation>
+        <restriction base="xsd:string">
+            <enumeration value="REQUEST">
+                <annotation>
+                    <documentation>Межведомственный запрос</documentation>
+                </annotation>
+            </enumeration>
+            <enumeration value="SERVICE">
+                <annotation>
+                    <documentation>Государственная услуга</documentation>
+                </annotation>
+            </enumeration>
+            <enumeration value="POLL">
+                <annotation>
+                    <documentation>Опросник</documentation>
+                </annotation>
+            </enumeration>
+        </restriction>
+    </simpleType>
+    <complexType name="smevService">
+        <annotation>
+            <documentation>СМЭВ Государственная услуга</documentation>
+        </annotation>
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="territorialIndication" nillable="true" type="impl:smevServiceTerritorialIndicationSXEnum">
+                <annotation>
+                    <documentation>Территориальный признак</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="code" type="xsd:string">
+                <!--Mandatory in create operation-->
+                <annotation>
+                    <documentation>Код</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="fullName" nillable="true" type="xsd:string">
+                <annotation>
+                    <documentation>Полное наименование</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="type" nillable="true" type="impl:smevServiceTypeSXEnum">
+                <annotation>
+                    <documentation>Тип</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="realProviders" nillable="true" type="tns1:ArrayOfegOrganization">
+                <annotation>
+                    <documentation>Список организаций с учётом настройки агентов</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="description" nillable="true" type="xsd:string">
+                <annotation>
+                    <documentation>Описание</documentation>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="name" nillable="true" type="xsd:string">
+                <!--Mandatory in create operation-->
+                <annotation>
+                    <documentation>Краткое имя</documentation>
+                </annotation>
+            </element>
+        </sequence>
+    </complexType>
+    <complexType name="createSmevServiceRequest">
+        <sequence>
+            <element maxOccurs="1" minOccurs="1" name="smevService" type="impl:smevService"/>
+        </sequence>
+    </complexType>
+    <element name="createSmevServiceRequest" type="impl:createSmevServiceRequest"/>
+    <complexType name="createSmevServiceResponse">
+        <sequence>
+            <element maxOccurs="1" minOccurs="1" name="smevService" type="impl:smevService"/>
+        </sequence>
+    </complexType>
+    <element name="createSmevServiceResponse" type="impl:createSmevServiceResponse"/>
+    <complexType name="deleteSmevServiceRequest">
+        <sequence>
+            <element maxOccurs="1" minOccurs="1" name="code" type="xsd:string">
+                <!--Mandatory in create operation-->
+            </element>
+        </sequence>
+    </complexType>
+    <element name="deleteSmevServiceRequest" type="impl:deleteSmevServiceRequest"/>
+    <complexType name="deleteSmevServiceResponse">
+        <sequence>
+            <element maxOccurs="1" minOccurs="1" name="code" type="xsd:string">
+                <!--Mandatory in create operation-->
+            </element>
+        </sequence>
+    </complexType>
+    <element name="deleteSmevServiceResponse" type="impl:deleteSmevServiceResponse"/>
+    <complexType name="updateSmevServiceRequest">
+        <sequence>
+            <element maxOccurs="1" minOccurs="1" name="smevService" type="impl:smevService"/>
+        </sequence>
+    </complexType>
+    <element name="updateSmevServiceRequest" type="impl:updateSmevServiceRequest"/>
+    <complexType name="updateSmevServiceResponse">
+        <sequence>
+            <element maxOccurs="1" minOccurs="1" name="smevService" type="impl:smevService"/>
+        </sequence>
+    </complexType>
+    <element name="updateSmevServiceResponse" type="impl:updateSmevServiceResponse"/>
+    <complexType name="ArrayOfsmevService">
+        <sequence>
+            <element maxOccurs="unbounded" minOccurs="0" name="smevService" type="impl:smevService"/>
+        </sequence>
+    </complexType>
+    <complexType name="getSmevServiceRequest">
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="limit" nillable="true" type="xsd:int"/>
+            <element maxOccurs="1" minOccurs="0" name="offset" nillable="true" type="xsd:int"/>
+            <element maxOccurs="1" minOccurs="0" name="CondOfsmevService" nillable="true" type="impl:ArrayOfsmevService"/>
+            <element maxOccurs="1" minOccurs="0" name="order" nillable="true" type="xsd:string"/>
+        </sequence>
+    </complexType>
+    <element name="getSmevServiceRequest" type="impl:getSmevServiceRequest"/>
+    <complexType name="getSmevServiceResponse">
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="ArrayOfsmevService" type="impl:ArrayOfsmevService"/>
+            <element maxOccurs="1" minOccurs="0" name="total" nillable="true" type="xsd:int"/>
+        </sequence>
+    </complexType>
+    <element name="getSmevServiceResponse" type="impl:getSmevServiceResponse"/>
+    <complexType name="findSmevServiceRequest">
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="limit" nillable="true" type="xsd:int"/>
+            <element maxOccurs="1" minOccurs="0" name="offset" nillable="true" type="xsd:int"/>
+            <element maxOccurs="1" minOccurs="0" name="order" nillable="true" type="xsd:string"/>
+            <element maxOccurs="1" minOccurs="0" name="condition" nillable="true" type="xsd:string"/>
+        </sequence>
+    </complexType>
+    <element name="findSmevServiceRequest" type="impl:findSmevServiceRequest"/>
+    <complexType name="findSmevServiceResponse">
+        <sequence>
+            <element maxOccurs="1" minOccurs="0" name="ArrayOfsmevService" type="impl:ArrayOfsmevService"/>
+            <element maxOccurs="1" minOccurs="0" name="total" nillable="true" type="xsd:int"/>
+        </sequence>
+    </complexType>
+    <element name="findSmevServiceResponse" type="impl:findSmevServiceResponse"/>
+</schema>

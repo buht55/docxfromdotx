@@ -1,0 +1,3939 @@
+<wsdl:definitions targetNamespace="http://xsd.smev.ru/ppu/guszkh" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://xsd.smev.ru/ppu/guszkh" xmlns:intf="http://xsd.smev.ru/ppu/guszkh" xmlns:tns1="http://tura.tyumen.ru/xsd/ppu" xmlns:tns2="http://sys.smev.ru/xsd/smevppu" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Sitex Soap module on Вт, 20 Февраль 2018 11:02:27 +0500-->
+ <wsdl:types>
+  <xsd:schema targetNamespace="http://xsd.smev.ru/ppu/guszkh">
+   <xsd:include schemaLocation="rv?xsd=pmvguszkh.jws.xsd"/>
+  </xsd:schema>
+ </wsdl:types>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshStoyV4UrbanPlansForLandRequest">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshStoyV4UrbanPlansForLandRequest" name="updateSmvSprgusPodgRazreshStoyV4UrbanPlansForLandRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshStoyV4AgreementReconstructionResponse">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshStoyV4AgreementReconstructionResponse" name="createSmvSprgusPodgRazreshStoyV4AgreementReconstructionResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsRequest">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsRequest" name="getSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsRequest">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsRequest" name="findSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsResponse">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsResponse" name="createSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionResponse">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionResponse" name="getSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvGusPodgRazreshVvodExplV2Response">
+
+      <wsdl:part element="impl:findSmvGusPodgRazreshVvodExplV2Response" name="findSmvGusPodgRazreshVvodExplV2Response">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsResponse">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsResponse" name="getSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsResponse">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsResponse" name="findSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsResponse">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsResponse" name="updateSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshStoyV4AgreementReconstructionResponse">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshStoyV4AgreementReconstructionResponse" name="updateSmvSprgusPodgRazreshStoyV4AgreementReconstructionResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshStoyV4PermissionDeviateRequest">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshStoyV4PermissionDeviateRequest" name="getSmvSprgusPodgRazreshStoyV4PermissionDeviateRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshStoyV4UrbanPlansForLandRequest">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshStoyV4UrbanPlansForLandRequest" name="findSmvSprgusPodgRazreshStoyV4UrbanPlansForLandRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsRequest">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsRequest" name="findSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsResponse">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsResponse" name="createSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvGusPodgRazreshStoyV3Request">
+
+      <wsdl:part element="impl:getSmvGusPodgRazreshStoyV3Request" name="getSmvGusPodgRazreshStoyV3Request">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsRequest">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsRequest" name="createSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningRequest">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningRequest" name="updateSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingResponse">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingResponse" name="getSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshStoyV4UrbanPlansForLandResponse">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshStoyV4UrbanPlansForLandResponse" name="createSmvSprgusPodgRazreshStoyV4UrbanPlansForLandResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvGusPodgRazreshStoyV3Response">
+
+      <wsdl:part element="impl:createSmvGusPodgRazreshStoyV3Response" name="createSmvGusPodgRazreshStoyV3Response">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandRequest">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandRequest" name="updateSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshStoyV4PermissionDeviateRequest">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshStoyV4PermissionDeviateRequest" name="updateSmvSprgusPodgRazreshStoyV4PermissionDeviateRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandRequest">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandRequest" name="getSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsRequest">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsRequest" name="updateSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsResponse">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsResponse" name="updateSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsRequest">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsRequest" name="getSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsRequest">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsRequest" name="createSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsResponse">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsResponse" name="createSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsResponse">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsResponse" name="updateSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshStoyV4UrbanPlansForLandResponse">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshStoyV4UrbanPlansForLandResponse" name="getSmvSprgusPodgRazreshStoyV4UrbanPlansForLandResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsRequest">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsRequest" name="getSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningResponse">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningResponse" name="updateSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshStoyV4TransferAgreementRequest">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshStoyV4TransferAgreementRequest" name="createSmvSprgusPodgRazreshStoyV4TransferAgreementRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshVvodExplV2DocumentsToLandRequest">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshVvodExplV2DocumentsToLandRequest" name="createSmvSprgusPodgRazreshVvodExplV2DocumentsToLandRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsResponse">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsResponse" name="findSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshStoyV4AgreementReconstructionRequest">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshStoyV4AgreementReconstructionRequest" name="updateSmvSprgusPodgRazreshStoyV4AgreementReconstructionRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsResponse">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsResponse" name="createSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectRequest">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectRequest" name="getSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvGusPodgRazreshStoyV3Response">
+
+      <wsdl:part element="impl:findSmvGusPodgRazreshStoyV3Response" name="findSmvGusPodgRazreshStoyV3Response">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshStoyV4TransferAgreementRequest">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshStoyV4TransferAgreementRequest" name="getSmvSprgusPodgRazreshStoyV4TransferAgreementRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsRequest">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsRequest" name="getSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionResponse">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionResponse" name="createSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionRequest">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionRequest" name="createSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingResponse">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingResponse" name="updateSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshVvodExplV2DocumentsToLandResponse">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshVvodExplV2DocumentsToLandResponse" name="findSmvSprgusPodgRazreshVvodExplV2DocumentsToLandResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsRequest">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsRequest" name="getSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectResponse">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectResponse" name="getSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshStoyV4DocumentsToLandRequest">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshStoyV4DocumentsToLandRequest" name="updateSmvSprgusPodgRazreshStoyV4DocumentsToLandRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionRequest">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionRequest" name="getSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshStoyV4PermissionDeviateResponse">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshStoyV4PermissionDeviateResponse" name="findSmvSprgusPodgRazreshStoyV4PermissionDeviateResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningResponse">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningResponse" name="getSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsResponse">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsResponse" name="createSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshStoyV4PermissionDeviateRequest">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshStoyV4PermissionDeviateRequest" name="findSmvSprgusPodgRazreshStoyV4PermissionDeviateRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsResponse">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsResponse" name="updateSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshStoyV4TransferAgreementRequest">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshStoyV4TransferAgreementRequest" name="findSmvSprgusPodgRazreshStoyV4TransferAgreementRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshStoyV4PermissionDeviateResponse">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshStoyV4PermissionDeviateResponse" name="updateSmvSprgusPodgRazreshStoyV4PermissionDeviateResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsResponse">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsResponse" name="getSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandResponse">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandResponse" name="createSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsResponse">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsResponse" name="getSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectRequest">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectRequest" name="createSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsRequest">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsRequest" name="getSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionResponse">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionResponse" name="findSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshVvodExplV2DocumentsToLandRequest">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshVvodExplV2DocumentsToLandRequest" name="findSmvSprgusPodgRazreshVvodExplV2DocumentsToLandRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshStoyV4TransferAgreementResponse">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshStoyV4TransferAgreementResponse" name="getSmvSprgusPodgRazreshStoyV4TransferAgreementResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshStoyV4DocumentsToLandResponse">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshStoyV4DocumentsToLandResponse" name="getSmvSprgusPodgRazreshStoyV4DocumentsToLandResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsResponse">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsResponse" name="findSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsResponse">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsResponse" name="createSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsResponse">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsResponse" name="createSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectRequest">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectRequest" name="updateSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsRequest">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsRequest" name="findSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingResponse">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingResponse" name="createSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshVvodExplV2DocumentsToLandResponse">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshVvodExplV2DocumentsToLandResponse" name="getSmvSprgusPodgRazreshVvodExplV2DocumentsToLandResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshStoyV4AgreementReconstructionResponse">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshStoyV4AgreementReconstructionResponse" name="getSmvSprgusPodgRazreshStoyV4AgreementReconstructionResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionRequest">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionRequest" name="findSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshStoyV4UrbanPlansForLandResponse">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshStoyV4UrbanPlansForLandResponse" name="findSmvSprgusPodgRazreshStoyV4UrbanPlansForLandResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingRequest">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingRequest" name="updateSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionRequest">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionRequest" name="updateSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshStoyV4TransferAgreementResponse">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshStoyV4TransferAgreementResponse" name="updateSmvSprgusPodgRazreshStoyV4TransferAgreementResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshStoyV4UrbanPlansForLandRequest">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshStoyV4UrbanPlansForLandRequest" name="createSmvSprgusPodgRazreshStoyV4UrbanPlansForLandRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvGusPodgRazreshVvodExplV2Request">
+
+      <wsdl:part element="impl:createSmvGusPodgRazreshVvodExplV2Request" name="createSmvGusPodgRazreshVvodExplV2Request">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsRequest">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsRequest" name="createSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningRequest">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningRequest" name="getSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshStoyV4PermissionDeviateResponse">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshStoyV4PermissionDeviateResponse" name="getSmvSprgusPodgRazreshStoyV4PermissionDeviateResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshStoyV4DocumentsToLandResponse">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshStoyV4DocumentsToLandResponse" name="updateSmvSprgusPodgRazreshStoyV4DocumentsToLandResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvGusPodgRazreshStoyV4Request">
+
+      <wsdl:part element="impl:getSmvGusPodgRazreshStoyV4Request" name="getSmvGusPodgRazreshStoyV4Request">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsRequest">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsRequest" name="findSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsResponse">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsResponse" name="findSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingRequest">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingRequest" name="getSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandRequest">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandRequest" name="createSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsRequest">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsRequest" name="getSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionResponse">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionResponse" name="updateSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsResponse">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsResponse" name="getSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshStoyV4DocumentsToLandRequest">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshStoyV4DocumentsToLandRequest" name="createSmvSprgusPodgRazreshStoyV4DocumentsToLandRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvGusPodgRazreshStoyV4Response">
+
+      <wsdl:part element="impl:createSmvGusPodgRazreshStoyV4Response" name="createSmvGusPodgRazreshStoyV4Response">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsRequest">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsRequest" name="updateSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshStoyV4AgreementReconstructionRequest">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshStoyV4AgreementReconstructionRequest" name="findSmvSprgusPodgRazreshStoyV4AgreementReconstructionRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshStoyV4UrbanPlansForLandRequest">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshStoyV4UrbanPlansForLandRequest" name="getSmvSprgusPodgRazreshStoyV4UrbanPlansForLandRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvGusPodgRazreshStoyV4Response">
+
+      <wsdl:part element="impl:getSmvGusPodgRazreshStoyV4Response" name="getSmvGusPodgRazreshStoyV4Response">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsResponse">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsResponse" name="updateSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvGusPodgRazreshStoyV3Response">
+
+      <wsdl:part element="impl:getSmvGusPodgRazreshStoyV3Response" name="getSmvGusPodgRazreshStoyV3Response">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshStoyV4DocumentsToLandRequest">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshStoyV4DocumentsToLandRequest" name="findSmvSprgusPodgRazreshStoyV4DocumentsToLandRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandResponse">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandResponse" name="getSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshStoyV4AgreementReconstructionRequest">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshStoyV4AgreementReconstructionRequest" name="createSmvSprgusPodgRazreshStoyV4AgreementReconstructionRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshStoyV4UrbanPlansForLandResponse">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshStoyV4UrbanPlansForLandResponse" name="updateSmvSprgusPodgRazreshStoyV4UrbanPlansForLandResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsRequest">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsRequest" name="createSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningRequest">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningRequest" name="createSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsRequest">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsRequest" name="updateSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvGusPodgRazreshStoyV4Request">
+
+      <wsdl:part element="impl:createSmvGusPodgRazreshStoyV4Request" name="createSmvGusPodgRazreshStoyV4Request">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandResponse">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandResponse" name="updateSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsResponse">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsResponse" name="updateSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvGusPodgRazreshVvodExplV2Request">
+
+      <wsdl:part element="impl:getSmvGusPodgRazreshVvodExplV2Request" name="getSmvGusPodgRazreshVvodExplV2Request">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingResponse">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingResponse" name="findSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectResponse">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectResponse" name="updateSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshStoyV4TransferAgreementResponse">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshStoyV4TransferAgreementResponse" name="findSmvSprgusPodgRazreshStoyV4TransferAgreementResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvGusPodgRazreshStoyV3Request">
+
+      <wsdl:part element="impl:createSmvGusPodgRazreshStoyV3Request" name="createSmvGusPodgRazreshStoyV3Request">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsRequest">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsRequest" name="updateSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectResponse">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectResponse" name="findSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshStoyV4DocumentsToLandRequest">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshStoyV4DocumentsToLandRequest" name="getSmvSprgusPodgRazreshStoyV4DocumentsToLandRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvGusPodgRazreshStoyV3Request">
+
+      <wsdl:part element="impl:findSmvGusPodgRazreshStoyV3Request" name="findSmvGusPodgRazreshStoyV3Request">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsRequest">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsRequest" name="findSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsRequest">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsRequest" name="updateSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsRequest">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsRequest" name="createSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsResponse">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsResponse" name="getSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsRequest">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsRequest" name="createSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshStoyV4DocumentsToLandResponse">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshStoyV4DocumentsToLandResponse" name="findSmvSprgusPodgRazreshStoyV4DocumentsToLandResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsRequest">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsRequest" name="updateSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsResponse">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsResponse" name="getSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsRequest">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsRequest" name="findSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshVvodExplV2DocumentsToLandResponse">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshVvodExplV2DocumentsToLandResponse" name="createSmvSprgusPodgRazreshVvodExplV2DocumentsToLandResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvGusPodgRazreshVvodExplV2Response">
+
+      <wsdl:part element="impl:getSmvGusPodgRazreshVvodExplV2Response" name="getSmvGusPodgRazreshVvodExplV2Response">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvGusPodgRazreshStoyV4Request">
+
+      <wsdl:part element="impl:findSmvGusPodgRazreshStoyV4Request" name="findSmvGusPodgRazreshStoyV4Request">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningResponse">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningResponse" name="createSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandResponse">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandResponse" name="findSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshVvodExplV2DocumentsToLandRequest">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshVvodExplV2DocumentsToLandRequest" name="updateSmvSprgusPodgRazreshVvodExplV2DocumentsToLandRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsRequest">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsRequest" name="getSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsRequest">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsRequest" name="findSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshStoyV4TransferAgreementResponse">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshStoyV4TransferAgreementResponse" name="createSmvSprgusPodgRazreshStoyV4TransferAgreementResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshStoyV4PermissionDeviateResponse">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshStoyV4PermissionDeviateResponse" name="createSmvSprgusPodgRazreshStoyV4PermissionDeviateResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsResponse">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsResponse" name="updateSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsRequest">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsRequest" name="createSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsResponse">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsResponse" name="findSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsResponse">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsResponse" name="findSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningResponse">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningResponse" name="findSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsResponse">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsResponse" name="updateSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshStoyV4TransferAgreementRequest">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshStoyV4TransferAgreementRequest" name="updateSmvSprgusPodgRazreshStoyV4TransferAgreementRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningRequest">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningRequest" name="findSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsResponse">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsResponse" name="createSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingRequest">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingRequest" name="findSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsResponse">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsResponse" name="findSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingRequest">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingRequest" name="createSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandRequest">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandRequest" name="findSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsResponse">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsResponse" name="getSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvGusPodgRazreshStoyV4Response">
+
+      <wsdl:part element="impl:findSmvGusPodgRazreshStoyV4Response" name="findSmvGusPodgRazreshStoyV4Response">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectResponse">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectResponse" name="createSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsResponse">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsResponse" name="getSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshStoyV4DocumentsToLandResponse">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshStoyV4DocumentsToLandResponse" name="createSmvSprgusPodgRazreshStoyV4DocumentsToLandResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshStoyV4AgreementReconstructionRequest">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshStoyV4AgreementReconstructionRequest" name="getSmvSprgusPodgRazreshStoyV4AgreementReconstructionRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsRequest">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsRequest" name="findSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsResponse">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsResponse" name="findSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshVvodExplV2DocumentsToLandResponse">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshVvodExplV2DocumentsToLandResponse" name="updateSmvSprgusPodgRazreshVvodExplV2DocumentsToLandResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvGusPodgRazreshVvodExplV2Request">
+
+      <wsdl:part element="impl:findSmvGusPodgRazreshVvodExplV2Request" name="findSmvGusPodgRazreshVvodExplV2Request">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvGusPodgRazreshVvodExplV2Response">
+
+      <wsdl:part element="impl:createSmvGusPodgRazreshVvodExplV2Response" name="createSmvGusPodgRazreshVvodExplV2Response">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshStoyV4PermissionDeviateRequest">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshStoyV4PermissionDeviateRequest" name="createSmvSprgusPodgRazreshStoyV4PermissionDeviateRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsRequest">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsRequest" name="updateSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSmvSprgusPodgRazreshVvodExplV2DocumentsToLandRequest">
+
+      <wsdl:part element="impl:getSmvSprgusPodgRazreshVvodExplV2DocumentsToLandRequest" name="getSmvSprgusPodgRazreshVvodExplV2DocumentsToLandRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectRequest">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectRequest" name="findSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsRequest">
+
+      <wsdl:part element="impl:updateSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsRequest" name="updateSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="createSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsRequest">
+
+      <wsdl:part element="impl:createSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsRequest" name="createSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsRequest">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findSmvSprgusPodgRazreshStoyV4AgreementReconstructionResponse">
+
+      <wsdl:part element="impl:findSmvSprgusPodgRazreshStoyV4AgreementReconstructionResponse" name="findSmvSprgusPodgRazreshStoyV4AgreementReconstructionResponse">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="pmvguszkh">
+
+      <wsdl:operation name="createSmvGusPodgRazreshVvodExplV2" parameterOrder="createSmvGusPodgRazreshVvodExplV2Request">
+
+         <wsdl:input message="impl:createSmvGusPodgRazreshVvodExplV2Request" name="createSmvGusPodgRazreshVvodExplV2Request">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:createSmvGusPodgRazreshVvodExplV2Response" name="createSmvGusPodgRazreshVvodExplV2Response">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvGusPodgRazreshVvodExplV2" parameterOrder="getSmvGusPodgRazreshVvodExplV2Request">
+
+         <wsdl:input message="impl:getSmvGusPodgRazreshVvodExplV2Request" name="getSmvGusPodgRazreshVvodExplV2Request">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getSmvGusPodgRazreshVvodExplV2Response" name="getSmvGusPodgRazreshVvodExplV2Response">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvGusPodgRazreshVvodExplV2" parameterOrder="findSmvGusPodgRazreshVvodExplV2Request">
+
+         <wsdl:input message="impl:findSmvGusPodgRazreshVvodExplV2Request" name="findSmvGusPodgRazreshVvodExplV2Request">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:findSmvGusPodgRazreshVvodExplV2Response" name="findSmvGusPodgRazreshVvodExplV2Response">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocuments" parameterOrder="createSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsRequest">
+
+         <wsdl:input message="impl:createSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsRequest" name="createSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:createSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsResponse" name="createSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocuments" parameterOrder="updateSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsRequest">
+
+         <wsdl:input message="impl:updateSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsRequest" name="updateSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:updateSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsResponse" name="updateSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocuments" parameterOrder="getSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsRequest">
+
+         <wsdl:input message="impl:getSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsRequest" name="getSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsResponse" name="getSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocuments" parameterOrder="findSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsRequest">
+
+         <wsdl:input message="impl:findSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsRequest" name="findSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:findSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsResponse" name="findSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshVvodExplV2ProjectsPlanning" parameterOrder="createSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningRequest">
+
+         <wsdl:input message="impl:createSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningRequest" name="createSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:createSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningResponse" name="createSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshVvodExplV2ProjectsPlanning" parameterOrder="updateSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningRequest">
+
+         <wsdl:input message="impl:updateSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningRequest" name="updateSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:updateSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningResponse" name="updateSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshVvodExplV2ProjectsPlanning" parameterOrder="getSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningRequest">
+
+         <wsdl:input message="impl:getSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningRequest" name="getSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningResponse" name="getSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshVvodExplV2ProjectsPlanning" parameterOrder="findSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningRequest">
+
+         <wsdl:input message="impl:findSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningRequest" name="findSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:findSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningResponse" name="findSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocuments" parameterOrder="createSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsRequest">
+
+         <wsdl:input message="impl:createSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsRequest" name="createSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:createSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsResponse" name="createSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocuments" parameterOrder="updateSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsRequest">
+
+         <wsdl:input message="impl:updateSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsRequest" name="updateSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:updateSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsResponse" name="updateSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocuments" parameterOrder="getSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsRequest">
+
+         <wsdl:input message="impl:getSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsRequest" name="getSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsResponse" name="getSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocuments" parameterOrder="findSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsRequest">
+
+         <wsdl:input message="impl:findSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsRequest" name="findSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:findSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsResponse" name="findSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocuments" parameterOrder="createSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsRequest">
+
+         <wsdl:input message="impl:createSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsRequest" name="createSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:createSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsResponse" name="createSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocuments" parameterOrder="updateSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsRequest">
+
+         <wsdl:input message="impl:updateSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsRequest" name="updateSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:updateSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsResponse" name="updateSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocuments" parameterOrder="getSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsRequest">
+
+         <wsdl:input message="impl:getSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsRequest" name="getSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsResponse" name="getSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocuments" parameterOrder="findSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsRequest">
+
+         <wsdl:input message="impl:findSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsRequest" name="findSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:findSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsResponse" name="findSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLand" parameterOrder="createSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandRequest">
+
+         <wsdl:input message="impl:createSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandRequest" name="createSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:createSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandResponse" name="createSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLand" parameterOrder="updateSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandRequest">
+
+         <wsdl:input message="impl:updateSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandRequest" name="updateSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:updateSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandResponse" name="updateSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLand" parameterOrder="getSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandRequest">
+
+         <wsdl:input message="impl:getSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandRequest" name="getSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandResponse" name="getSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLand" parameterOrder="findSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandRequest">
+
+         <wsdl:input message="impl:findSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandRequest" name="findSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:findSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandResponse" name="findSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocuments" parameterOrder="createSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsRequest">
+
+         <wsdl:input message="impl:createSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsRequest" name="createSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:createSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsResponse" name="createSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocuments" parameterOrder="updateSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsRequest">
+
+         <wsdl:input message="impl:updateSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsRequest" name="updateSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:updateSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsResponse" name="updateSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocuments" parameterOrder="getSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsRequest">
+
+         <wsdl:input message="impl:getSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsRequest" name="getSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsResponse" name="getSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocuments" parameterOrder="findSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsRequest">
+
+         <wsdl:input message="impl:findSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsRequest" name="findSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:findSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsResponse" name="findSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocs" parameterOrder="createSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsRequest">
+
+         <wsdl:input message="impl:createSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsRequest" name="createSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:createSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsResponse" name="createSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocs" parameterOrder="updateSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsRequest">
+
+         <wsdl:input message="impl:updateSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsRequest" name="updateSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:updateSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsResponse" name="updateSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocs" parameterOrder="getSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsRequest">
+
+         <wsdl:input message="impl:getSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsRequest" name="getSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsResponse" name="getSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocs" parameterOrder="findSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsRequest">
+
+         <wsdl:input message="impl:findSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsRequest" name="findSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:findSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsResponse" name="findSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocuments" parameterOrder="createSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsRequest">
+
+         <wsdl:input message="impl:createSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsRequest" name="createSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:createSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsResponse" name="createSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocuments" parameterOrder="updateSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsRequest">
+
+         <wsdl:input message="impl:updateSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsRequest" name="updateSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:updateSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsResponse" name="updateSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocuments" parameterOrder="getSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsRequest">
+
+         <wsdl:input message="impl:getSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsRequest" name="getSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsResponse" name="getSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocuments" parameterOrder="findSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsRequest">
+
+         <wsdl:input message="impl:findSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsRequest" name="findSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:findSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsResponse" name="findSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshVvodExplV2TPAppliedDocuments" parameterOrder="createSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsRequest">
+
+         <wsdl:input message="impl:createSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsRequest" name="createSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:createSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsResponse" name="createSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshVvodExplV2TPAppliedDocuments" parameterOrder="updateSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsRequest">
+
+         <wsdl:input message="impl:updateSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsRequest" name="updateSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:updateSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsResponse" name="updateSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshVvodExplV2TPAppliedDocuments" parameterOrder="getSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsRequest">
+
+         <wsdl:input message="impl:getSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsRequest" name="getSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsResponse" name="getSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshVvodExplV2TPAppliedDocuments" parameterOrder="findSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsRequest">
+
+         <wsdl:input message="impl:findSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsRequest" name="findSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:findSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsResponse" name="findSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocuments" parameterOrder="createSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsRequest">
+
+         <wsdl:input message="impl:createSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsRequest" name="createSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:createSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsResponse" name="createSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocuments" parameterOrder="updateSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsRequest">
+
+         <wsdl:input message="impl:updateSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsRequest" name="updateSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:updateSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsResponse" name="updateSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocuments" parameterOrder="getSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsRequest">
+
+         <wsdl:input message="impl:getSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsRequest" name="getSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsResponse" name="getSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocuments" parameterOrder="findSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsRequest">
+
+         <wsdl:input message="impl:findSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsRequest" name="findSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:findSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsResponse" name="findSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshVvodExplV2BorderLocationDescription" parameterOrder="createSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionRequest">
+
+         <wsdl:input message="impl:createSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionRequest" name="createSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:createSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionResponse" name="createSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshVvodExplV2BorderLocationDescription" parameterOrder="updateSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionRequest">
+
+         <wsdl:input message="impl:updateSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionRequest" name="updateSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:updateSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionResponse" name="updateSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshVvodExplV2BorderLocationDescription" parameterOrder="getSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionRequest">
+
+         <wsdl:input message="impl:getSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionRequest" name="getSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionResponse" name="getSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshVvodExplV2BorderLocationDescription" parameterOrder="findSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionRequest">
+
+         <wsdl:input message="impl:findSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionRequest" name="findSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:findSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionResponse" name="findSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshVvodExplV2DocumentsToLand" parameterOrder="createSmvSprgusPodgRazreshVvodExplV2DocumentsToLandRequest">
+
+         <wsdl:input message="impl:createSmvSprgusPodgRazreshVvodExplV2DocumentsToLandRequest" name="createSmvSprgusPodgRazreshVvodExplV2DocumentsToLandRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:createSmvSprgusPodgRazreshVvodExplV2DocumentsToLandResponse" name="createSmvSprgusPodgRazreshVvodExplV2DocumentsToLandResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshVvodExplV2DocumentsToLand" parameterOrder="updateSmvSprgusPodgRazreshVvodExplV2DocumentsToLandRequest">
+
+         <wsdl:input message="impl:updateSmvSprgusPodgRazreshVvodExplV2DocumentsToLandRequest" name="updateSmvSprgusPodgRazreshVvodExplV2DocumentsToLandRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:updateSmvSprgusPodgRazreshVvodExplV2DocumentsToLandResponse" name="updateSmvSprgusPodgRazreshVvodExplV2DocumentsToLandResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshVvodExplV2DocumentsToLand" parameterOrder="getSmvSprgusPodgRazreshVvodExplV2DocumentsToLandRequest">
+
+         <wsdl:input message="impl:getSmvSprgusPodgRazreshVvodExplV2DocumentsToLandRequest" name="getSmvSprgusPodgRazreshVvodExplV2DocumentsToLandRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getSmvSprgusPodgRazreshVvodExplV2DocumentsToLandResponse" name="getSmvSprgusPodgRazreshVvodExplV2DocumentsToLandResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshVvodExplV2DocumentsToLand" parameterOrder="findSmvSprgusPodgRazreshVvodExplV2DocumentsToLandRequest">
+
+         <wsdl:input message="impl:findSmvSprgusPodgRazreshVvodExplV2DocumentsToLandRequest" name="findSmvSprgusPodgRazreshVvodExplV2DocumentsToLandRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:findSmvSprgusPodgRazreshVvodExplV2DocumentsToLandResponse" name="findSmvSprgusPodgRazreshVvodExplV2DocumentsToLandResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshStoyV4UrbanPlansForLand" parameterOrder="createSmvSprgusPodgRazreshStoyV4UrbanPlansForLandRequest">
+
+         <wsdl:input message="impl:createSmvSprgusPodgRazreshStoyV4UrbanPlansForLandRequest" name="createSmvSprgusPodgRazreshStoyV4UrbanPlansForLandRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:createSmvSprgusPodgRazreshStoyV4UrbanPlansForLandResponse" name="createSmvSprgusPodgRazreshStoyV4UrbanPlansForLandResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshStoyV4UrbanPlansForLand" parameterOrder="updateSmvSprgusPodgRazreshStoyV4UrbanPlansForLandRequest">
+
+         <wsdl:input message="impl:updateSmvSprgusPodgRazreshStoyV4UrbanPlansForLandRequest" name="updateSmvSprgusPodgRazreshStoyV4UrbanPlansForLandRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:updateSmvSprgusPodgRazreshStoyV4UrbanPlansForLandResponse" name="updateSmvSprgusPodgRazreshStoyV4UrbanPlansForLandResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshStoyV4UrbanPlansForLand" parameterOrder="getSmvSprgusPodgRazreshStoyV4UrbanPlansForLandRequest">
+
+         <wsdl:input message="impl:getSmvSprgusPodgRazreshStoyV4UrbanPlansForLandRequest" name="getSmvSprgusPodgRazreshStoyV4UrbanPlansForLandRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getSmvSprgusPodgRazreshStoyV4UrbanPlansForLandResponse" name="getSmvSprgusPodgRazreshStoyV4UrbanPlansForLandResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshStoyV4UrbanPlansForLand" parameterOrder="findSmvSprgusPodgRazreshStoyV4UrbanPlansForLandRequest">
+
+         <wsdl:input message="impl:findSmvSprgusPodgRazreshStoyV4UrbanPlansForLandRequest" name="findSmvSprgusPodgRazreshStoyV4UrbanPlansForLandRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:findSmvSprgusPodgRazreshStoyV4UrbanPlansForLandResponse" name="findSmvSprgusPodgRazreshStoyV4UrbanPlansForLandResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshStoyV4DocumentsToLand" parameterOrder="createSmvSprgusPodgRazreshStoyV4DocumentsToLandRequest">
+
+         <wsdl:input message="impl:createSmvSprgusPodgRazreshStoyV4DocumentsToLandRequest" name="createSmvSprgusPodgRazreshStoyV4DocumentsToLandRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:createSmvSprgusPodgRazreshStoyV4DocumentsToLandResponse" name="createSmvSprgusPodgRazreshStoyV4DocumentsToLandResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshStoyV4DocumentsToLand" parameterOrder="updateSmvSprgusPodgRazreshStoyV4DocumentsToLandRequest">
+
+         <wsdl:input message="impl:updateSmvSprgusPodgRazreshStoyV4DocumentsToLandRequest" name="updateSmvSprgusPodgRazreshStoyV4DocumentsToLandRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:updateSmvSprgusPodgRazreshStoyV4DocumentsToLandResponse" name="updateSmvSprgusPodgRazreshStoyV4DocumentsToLandResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshStoyV4DocumentsToLand" parameterOrder="getSmvSprgusPodgRazreshStoyV4DocumentsToLandRequest">
+
+         <wsdl:input message="impl:getSmvSprgusPodgRazreshStoyV4DocumentsToLandRequest" name="getSmvSprgusPodgRazreshStoyV4DocumentsToLandRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getSmvSprgusPodgRazreshStoyV4DocumentsToLandResponse" name="getSmvSprgusPodgRazreshStoyV4DocumentsToLandResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshStoyV4DocumentsToLand" parameterOrder="findSmvSprgusPodgRazreshStoyV4DocumentsToLandRequest">
+
+         <wsdl:input message="impl:findSmvSprgusPodgRazreshStoyV4DocumentsToLandRequest" name="findSmvSprgusPodgRazreshStoyV4DocumentsToLandRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:findSmvSprgusPodgRazreshStoyV4DocumentsToLandResponse" name="findSmvSprgusPodgRazreshStoyV4DocumentsToLandResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshStoyV4PermissionDeviate" parameterOrder="createSmvSprgusPodgRazreshStoyV4PermissionDeviateRequest">
+
+         <wsdl:input message="impl:createSmvSprgusPodgRazreshStoyV4PermissionDeviateRequest" name="createSmvSprgusPodgRazreshStoyV4PermissionDeviateRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:createSmvSprgusPodgRazreshStoyV4PermissionDeviateResponse" name="createSmvSprgusPodgRazreshStoyV4PermissionDeviateResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshStoyV4PermissionDeviate" parameterOrder="updateSmvSprgusPodgRazreshStoyV4PermissionDeviateRequest">
+
+         <wsdl:input message="impl:updateSmvSprgusPodgRazreshStoyV4PermissionDeviateRequest" name="updateSmvSprgusPodgRazreshStoyV4PermissionDeviateRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:updateSmvSprgusPodgRazreshStoyV4PermissionDeviateResponse" name="updateSmvSprgusPodgRazreshStoyV4PermissionDeviateResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshStoyV4PermissionDeviate" parameterOrder="getSmvSprgusPodgRazreshStoyV4PermissionDeviateRequest">
+
+         <wsdl:input message="impl:getSmvSprgusPodgRazreshStoyV4PermissionDeviateRequest" name="getSmvSprgusPodgRazreshStoyV4PermissionDeviateRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getSmvSprgusPodgRazreshStoyV4PermissionDeviateResponse" name="getSmvSprgusPodgRazreshStoyV4PermissionDeviateResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshStoyV4PermissionDeviate" parameterOrder="findSmvSprgusPodgRazreshStoyV4PermissionDeviateRequest">
+
+         <wsdl:input message="impl:findSmvSprgusPodgRazreshStoyV4PermissionDeviateRequest" name="findSmvSprgusPodgRazreshStoyV4PermissionDeviateRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:findSmvSprgusPodgRazreshStoyV4PermissionDeviateResponse" name="findSmvSprgusPodgRazreshStoyV4PermissionDeviateResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshStoyV4TransferAgreement" parameterOrder="createSmvSprgusPodgRazreshStoyV4TransferAgreementRequest">
+
+         <wsdl:input message="impl:createSmvSprgusPodgRazreshStoyV4TransferAgreementRequest" name="createSmvSprgusPodgRazreshStoyV4TransferAgreementRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:createSmvSprgusPodgRazreshStoyV4TransferAgreementResponse" name="createSmvSprgusPodgRazreshStoyV4TransferAgreementResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshStoyV4TransferAgreement" parameterOrder="updateSmvSprgusPodgRazreshStoyV4TransferAgreementRequest">
+
+         <wsdl:input message="impl:updateSmvSprgusPodgRazreshStoyV4TransferAgreementRequest" name="updateSmvSprgusPodgRazreshStoyV4TransferAgreementRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:updateSmvSprgusPodgRazreshStoyV4TransferAgreementResponse" name="updateSmvSprgusPodgRazreshStoyV4TransferAgreementResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshStoyV4TransferAgreement" parameterOrder="getSmvSprgusPodgRazreshStoyV4TransferAgreementRequest">
+
+         <wsdl:input message="impl:getSmvSprgusPodgRazreshStoyV4TransferAgreementRequest" name="getSmvSprgusPodgRazreshStoyV4TransferAgreementRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getSmvSprgusPodgRazreshStoyV4TransferAgreementResponse" name="getSmvSprgusPodgRazreshStoyV4TransferAgreementResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshStoyV4TransferAgreement" parameterOrder="findSmvSprgusPodgRazreshStoyV4TransferAgreementRequest">
+
+         <wsdl:input message="impl:findSmvSprgusPodgRazreshStoyV4TransferAgreementRequest" name="findSmvSprgusPodgRazreshStoyV4TransferAgreementRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:findSmvSprgusPodgRazreshStoyV4TransferAgreementResponse" name="findSmvSprgusPodgRazreshStoyV4TransferAgreementResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProject" parameterOrder="createSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectRequest">
+
+         <wsdl:input message="impl:createSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectRequest" name="createSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:createSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectResponse" name="createSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProject" parameterOrder="updateSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectRequest">
+
+         <wsdl:input message="impl:updateSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectRequest" name="updateSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:updateSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectResponse" name="updateSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProject" parameterOrder="getSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectRequest">
+
+         <wsdl:input message="impl:getSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectRequest" name="getSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectResponse" name="getSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProject" parameterOrder="findSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectRequest">
+
+         <wsdl:input message="impl:findSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectRequest" name="findSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:findSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectResponse" name="findSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshStoyV4AgreementReconstruction" parameterOrder="createSmvSprgusPodgRazreshStoyV4AgreementReconstructionRequest">
+
+         <wsdl:input message="impl:createSmvSprgusPodgRazreshStoyV4AgreementReconstructionRequest" name="createSmvSprgusPodgRazreshStoyV4AgreementReconstructionRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:createSmvSprgusPodgRazreshStoyV4AgreementReconstructionResponse" name="createSmvSprgusPodgRazreshStoyV4AgreementReconstructionResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshStoyV4AgreementReconstruction" parameterOrder="updateSmvSprgusPodgRazreshStoyV4AgreementReconstructionRequest">
+
+         <wsdl:input message="impl:updateSmvSprgusPodgRazreshStoyV4AgreementReconstructionRequest" name="updateSmvSprgusPodgRazreshStoyV4AgreementReconstructionRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:updateSmvSprgusPodgRazreshStoyV4AgreementReconstructionResponse" name="updateSmvSprgusPodgRazreshStoyV4AgreementReconstructionResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshStoyV4AgreementReconstruction" parameterOrder="getSmvSprgusPodgRazreshStoyV4AgreementReconstructionRequest">
+
+         <wsdl:input message="impl:getSmvSprgusPodgRazreshStoyV4AgreementReconstructionRequest" name="getSmvSprgusPodgRazreshStoyV4AgreementReconstructionRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getSmvSprgusPodgRazreshStoyV4AgreementReconstructionResponse" name="getSmvSprgusPodgRazreshStoyV4AgreementReconstructionResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshStoyV4AgreementReconstruction" parameterOrder="findSmvSprgusPodgRazreshStoyV4AgreementReconstructionRequest">
+
+         <wsdl:input message="impl:findSmvSprgusPodgRazreshStoyV4AgreementReconstructionRequest" name="findSmvSprgusPodgRazreshStoyV4AgreementReconstructionRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:findSmvSprgusPodgRazreshStoyV4AgreementReconstructionResponse" name="findSmvSprgusPodgRazreshStoyV4AgreementReconstructionResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshStoyV4DecisionGeneralMeeting" parameterOrder="createSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingRequest">
+
+         <wsdl:input message="impl:createSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingRequest" name="createSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:createSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingResponse" name="createSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshStoyV4DecisionGeneralMeeting" parameterOrder="updateSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingRequest">
+
+         <wsdl:input message="impl:updateSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingRequest" name="updateSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:updateSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingResponse" name="updateSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshStoyV4DecisionGeneralMeeting" parameterOrder="getSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingRequest">
+
+         <wsdl:input message="impl:getSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingRequest" name="getSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingResponse" name="getSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshStoyV4DecisionGeneralMeeting" parameterOrder="findSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingRequest">
+
+         <wsdl:input message="impl:findSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingRequest" name="findSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:findSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingResponse" name="findSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvGusPodgRazreshStoyV4" parameterOrder="createSmvGusPodgRazreshStoyV4Request">
+
+         <wsdl:input message="impl:createSmvGusPodgRazreshStoyV4Request" name="createSmvGusPodgRazreshStoyV4Request">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:createSmvGusPodgRazreshStoyV4Response" name="createSmvGusPodgRazreshStoyV4Response">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvGusPodgRazreshStoyV4" parameterOrder="getSmvGusPodgRazreshStoyV4Request">
+
+         <wsdl:input message="impl:getSmvGusPodgRazreshStoyV4Request" name="getSmvGusPodgRazreshStoyV4Request">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getSmvGusPodgRazreshStoyV4Response" name="getSmvGusPodgRazreshStoyV4Response">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvGusPodgRazreshStoyV4" parameterOrder="findSmvGusPodgRazreshStoyV4Request">
+
+         <wsdl:input message="impl:findSmvGusPodgRazreshStoyV4Request" name="findSmvGusPodgRazreshStoyV4Request">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:findSmvGusPodgRazreshStoyV4Response" name="findSmvGusPodgRazreshStoyV4Response">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvGusPodgRazreshStoyV3" parameterOrder="createSmvGusPodgRazreshStoyV3Request">
+
+         <wsdl:input message="impl:createSmvGusPodgRazreshStoyV3Request" name="createSmvGusPodgRazreshStoyV3Request">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:createSmvGusPodgRazreshStoyV3Response" name="createSmvGusPodgRazreshStoyV3Response">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvGusPodgRazreshStoyV3" parameterOrder="getSmvGusPodgRazreshStoyV3Request">
+
+         <wsdl:input message="impl:getSmvGusPodgRazreshStoyV3Request" name="getSmvGusPodgRazreshStoyV3Request">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getSmvGusPodgRazreshStoyV3Response" name="getSmvGusPodgRazreshStoyV3Response">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvGusPodgRazreshStoyV3" parameterOrder="findSmvGusPodgRazreshStoyV3Request">
+
+         <wsdl:input message="impl:findSmvGusPodgRazreshStoyV3Request" name="findSmvGusPodgRazreshStoyV3Request">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:findSmvGusPodgRazreshStoyV3Response" name="findSmvGusPodgRazreshStoyV3Response">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="pmvguszkhSoapBinding" type="impl:pmvguszkh">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="createSmvGusPodgRazreshVvodExplV2">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="createSmvGusPodgRazreshVvodExplV2Request">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="createSmvGusPodgRazreshVvodExplV2Response">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvGusPodgRazreshVvodExplV2">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getSmvGusPodgRazreshVvodExplV2Request">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getSmvGusPodgRazreshVvodExplV2Response">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvGusPodgRazreshVvodExplV2">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="findSmvGusPodgRazreshVvodExplV2Request">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="findSmvGusPodgRazreshVvodExplV2Response">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocuments">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="createSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="createSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocuments">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="updateSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="updateSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocuments">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocuments">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="findSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="findSmvSprgusPodgRazreshVvodExplV2ECOAppliedDocumentsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshVvodExplV2ProjectsPlanning">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="createSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="createSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshVvodExplV2ProjectsPlanning">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="updateSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="updateSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshVvodExplV2ProjectsPlanning">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshVvodExplV2ProjectsPlanning">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="findSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="findSmvSprgusPodgRazreshVvodExplV2ProjectsPlanningResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocuments">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="createSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="createSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocuments">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="updateSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="updateSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocuments">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocuments">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="findSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="findSmvSprgusPodgRazreshVvodExplV2ZAKAppliedDocumentsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocuments">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="createSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="createSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocuments">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="updateSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="updateSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocuments">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocuments">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="findSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="findSmvSprgusPodgRazreshVvodExplV2SProjAppliedDocumentsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLand">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="createSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="createSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLand">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="updateSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="updateSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLand">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLand">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="findSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="findSmvSprgusPodgRazreshVvodExplV2UrbanPlansForLandResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocuments">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="createSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="createSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocuments">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="updateSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="updateSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocuments">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocuments">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="findSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="findSmvSprgusPodgRazreshVvodExplV2SRegAppliedDocumentsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocs">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="createSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="createSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocs">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="updateSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="updateSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocs">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocs">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="findSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="findSmvSprgusPodgRazreshVvodExplV2TechnicalConditionsOKSDocsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocuments">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="createSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="createSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocuments">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="updateSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="updateSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocuments">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocuments">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="findSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="findSmvSprgusPodgRazreshVvodExplV2STRAXAppliedDocumentsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshVvodExplV2TPAppliedDocuments">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="createSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="createSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshVvodExplV2TPAppliedDocuments">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="updateSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="updateSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshVvodExplV2TPAppliedDocuments">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshVvodExplV2TPAppliedDocuments">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="findSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="findSmvSprgusPodgRazreshVvodExplV2TPAppliedDocumentsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocuments">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="createSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="createSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocuments">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="updateSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="updateSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocuments">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocuments">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="findSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="findSmvSprgusPodgRazreshVvodExplV2ACTAppliedDocumentsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshVvodExplV2BorderLocationDescription">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="createSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="createSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshVvodExplV2BorderLocationDescription">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="updateSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="updateSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshVvodExplV2BorderLocationDescription">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshVvodExplV2BorderLocationDescription">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="findSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="findSmvSprgusPodgRazreshVvodExplV2BorderLocationDescriptionResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshVvodExplV2DocumentsToLand">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="createSmvSprgusPodgRazreshVvodExplV2DocumentsToLandRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="createSmvSprgusPodgRazreshVvodExplV2DocumentsToLandResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshVvodExplV2DocumentsToLand">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="updateSmvSprgusPodgRazreshVvodExplV2DocumentsToLandRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="updateSmvSprgusPodgRazreshVvodExplV2DocumentsToLandResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshVvodExplV2DocumentsToLand">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getSmvSprgusPodgRazreshVvodExplV2DocumentsToLandRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getSmvSprgusPodgRazreshVvodExplV2DocumentsToLandResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshVvodExplV2DocumentsToLand">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="findSmvSprgusPodgRazreshVvodExplV2DocumentsToLandRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="findSmvSprgusPodgRazreshVvodExplV2DocumentsToLandResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshStoyV4UrbanPlansForLand">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="createSmvSprgusPodgRazreshStoyV4UrbanPlansForLandRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="createSmvSprgusPodgRazreshStoyV4UrbanPlansForLandResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshStoyV4UrbanPlansForLand">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="updateSmvSprgusPodgRazreshStoyV4UrbanPlansForLandRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="updateSmvSprgusPodgRazreshStoyV4UrbanPlansForLandResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshStoyV4UrbanPlansForLand">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getSmvSprgusPodgRazreshStoyV4UrbanPlansForLandRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getSmvSprgusPodgRazreshStoyV4UrbanPlansForLandResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshStoyV4UrbanPlansForLand">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="findSmvSprgusPodgRazreshStoyV4UrbanPlansForLandRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="findSmvSprgusPodgRazreshStoyV4UrbanPlansForLandResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshStoyV4DocumentsToLand">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="createSmvSprgusPodgRazreshStoyV4DocumentsToLandRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="createSmvSprgusPodgRazreshStoyV4DocumentsToLandResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshStoyV4DocumentsToLand">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="updateSmvSprgusPodgRazreshStoyV4DocumentsToLandRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="updateSmvSprgusPodgRazreshStoyV4DocumentsToLandResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshStoyV4DocumentsToLand">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getSmvSprgusPodgRazreshStoyV4DocumentsToLandRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getSmvSprgusPodgRazreshStoyV4DocumentsToLandResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshStoyV4DocumentsToLand">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="findSmvSprgusPodgRazreshStoyV4DocumentsToLandRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="findSmvSprgusPodgRazreshStoyV4DocumentsToLandResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshStoyV4PermissionDeviate">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="createSmvSprgusPodgRazreshStoyV4PermissionDeviateRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="createSmvSprgusPodgRazreshStoyV4PermissionDeviateResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshStoyV4PermissionDeviate">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="updateSmvSprgusPodgRazreshStoyV4PermissionDeviateRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="updateSmvSprgusPodgRazreshStoyV4PermissionDeviateResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshStoyV4PermissionDeviate">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getSmvSprgusPodgRazreshStoyV4PermissionDeviateRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getSmvSprgusPodgRazreshStoyV4PermissionDeviateResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshStoyV4PermissionDeviate">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="findSmvSprgusPodgRazreshStoyV4PermissionDeviateRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="findSmvSprgusPodgRazreshStoyV4PermissionDeviateResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshStoyV4TransferAgreement">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="createSmvSprgusPodgRazreshStoyV4TransferAgreementRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="createSmvSprgusPodgRazreshStoyV4TransferAgreementResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshStoyV4TransferAgreement">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="updateSmvSprgusPodgRazreshStoyV4TransferAgreementRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="updateSmvSprgusPodgRazreshStoyV4TransferAgreementResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshStoyV4TransferAgreement">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getSmvSprgusPodgRazreshStoyV4TransferAgreementRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getSmvSprgusPodgRazreshStoyV4TransferAgreementResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshStoyV4TransferAgreement">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="findSmvSprgusPodgRazreshStoyV4TransferAgreementRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="findSmvSprgusPodgRazreshStoyV4TransferAgreementResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProject">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="createSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="createSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProject">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="updateSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="updateSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProject">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProject">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="findSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="findSmvSprgusPodgRazreshStoyV4DraftPlanningLandSurveyProjectResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshStoyV4AgreementReconstruction">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="createSmvSprgusPodgRazreshStoyV4AgreementReconstructionRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="createSmvSprgusPodgRazreshStoyV4AgreementReconstructionResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshStoyV4AgreementReconstruction">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="updateSmvSprgusPodgRazreshStoyV4AgreementReconstructionRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="updateSmvSprgusPodgRazreshStoyV4AgreementReconstructionResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshStoyV4AgreementReconstruction">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getSmvSprgusPodgRazreshStoyV4AgreementReconstructionRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getSmvSprgusPodgRazreshStoyV4AgreementReconstructionResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshStoyV4AgreementReconstruction">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="findSmvSprgusPodgRazreshStoyV4AgreementReconstructionRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="findSmvSprgusPodgRazreshStoyV4AgreementReconstructionResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvSprgusPodgRazreshStoyV4DecisionGeneralMeeting">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="createSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="createSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="updateSmvSprgusPodgRazreshStoyV4DecisionGeneralMeeting">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="updateSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="updateSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvSprgusPodgRazreshStoyV4DecisionGeneralMeeting">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvSprgusPodgRazreshStoyV4DecisionGeneralMeeting">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="findSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="findSmvSprgusPodgRazreshStoyV4DecisionGeneralMeetingResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvGusPodgRazreshStoyV4">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="createSmvGusPodgRazreshStoyV4Request">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="createSmvGusPodgRazreshStoyV4Response">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvGusPodgRazreshStoyV4">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getSmvGusPodgRazreshStoyV4Request">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getSmvGusPodgRazreshStoyV4Response">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvGusPodgRazreshStoyV4">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="findSmvGusPodgRazreshStoyV4Request">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="findSmvGusPodgRazreshStoyV4Response">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="createSmvGusPodgRazreshStoyV3">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="createSmvGusPodgRazreshStoyV3Request">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="createSmvGusPodgRazreshStoyV3Response">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSmvGusPodgRazreshStoyV3">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getSmvGusPodgRazreshStoyV3Request">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getSmvGusPodgRazreshStoyV3Response">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findSmvGusPodgRazreshStoyV3">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="findSmvGusPodgRazreshStoyV3Request">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="findSmvGusPodgRazreshStoyV3Response">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="pmvguszkh">
+
+      <wsdl:port binding="impl:pmvguszkhSoapBinding" name="pmvguszkh">
+
+         <wsdlsoap:address location="http://smev.gemsdev.ru/rpgu/rv"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

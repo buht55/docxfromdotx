@@ -1,0 +1,13 @@
+E:\git\docxfromdotx\DocxFromDotx\bin\Debug\netcoreapp2.0\DocxFromDotx.deps.json
+E:\git\docxfromdotx\DocxFromDotx\bin\Debug\netcoreapp2.0\DocxFromDotx.runtimeconfig.json
+E:\git\docxfromdotx\DocxFromDotx\bin\Debug\netcoreapp2.0\DocxFromDotx.runtimeconfig.dev.json
+E:\git\docxfromdotx\DocxFromDotx\bin\Debug\netcoreapp2.0\DocxFromDotx.dll
+E:\git\docxfromdotx\DocxFromDotx\obj\Debug\netcoreapp2.0\DocxFromDotx.csprojResolveAssemblyReference.cache
+E:\git\docxfromdotx\DocxFromDotx\obj\Debug\netcoreapp2.0\DocxFromDotx.csproj.CoreCompileInputs.cache
+E:\git\docxfromdotx\DocxFromDotx\obj\Debug\netcoreapp2.0\DocxFromDotx.AssemblyInfoInputs.cache
+E:\git\docxfromdotx\DocxFromDotx\obj\Debug\netcoreapp2.0\DocxFromDotx.AssemblyInfo.cs
+E:\git\docxfromdotx\DocxFromDotx\obj\Debug\netcoreapp2.0\DocxFromDotx.Resource1.resources
+E:\git\docxfromdotx\DocxFromDotx\obj\Debug\netcoreapp2.0\DocxFromDotx.csproj.GenerateResource.cache
+E:\git\docxfromdotx\DocxFromDotx\bin\Debug\netcoreapp2.0\DocxFromDotx.pdb
+E:\git\docxfromdotx\DocxFromDotx\obj\Debug\netcoreapp2.0\DocxFromDotx.dll
+E:\git\docxfromdotx\DocxFromDotx\obj\Debug\netcoreapp2.0\DocxFromDotx.pdb
