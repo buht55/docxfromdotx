@@ -7,11 +7,11 @@ using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Wordprocessing;
 using Break = DocumentFormat.OpenXml.Wordprocessing.Break;
-using Paragraph = DocumentFormat.OpenXml.Drawing.Paragraph;
-using Run = DocumentFormat.OpenXml.Drawing.Run;
-using TableCell = DocumentFormat.OpenXml.Drawing.TableCell;
-using Text = DocumentFormat.OpenXml.Drawing.Text;
+using Paragraph = DocumentFormat.OpenXml.Wordprocessing.Paragraph;
 using Path = System.IO.Path;
+using Run = DocumentFormat.OpenXml.Wordprocessing.Run;
+using TableCell = DocumentFormat.OpenXml.Wordprocessing.TableCell;
+using Text = DocumentFormat.OpenXml.Wordprocessing.Text;
 using DocxFromDotx.StatementGenerator.Types;
 
 
@@ -93,7 +93,10 @@ namespace DocxFromDotx.StatementGenerator
 
         private List<OpenXmlElement> GetParagraphs(List<OpenXmlElement> nodes)
         {
-            var list = nodes.Where(x => x is Paragraph).ToList();
+            var list = nodes.Where(x =>
+            {
+                return x is Paragraph;
+            }).ToList();
             list.AddRange(nodes.SelectMany(x => x.Descendants<Paragraph>()));
             return list;
         }
@@ -173,7 +176,7 @@ namespace DocxFromDotx.StatementGenerator
         {
 
             var path = Path.Combine(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location),
-                $"ReportTemplates{Path.DirectorySeparatorChar}{Name}.dotx");
+                $"StatementGenerator{Path.DirectorySeparatorChar}dotx{Path.DirectorySeparatorChar}{Name}.dotx");
             var mem = new MemoryStream();
             var byteArray = File.ReadAllBytes(path);
             mem.Write(byteArray, 0, byteArray.Length);

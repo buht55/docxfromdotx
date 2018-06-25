@@ -49,7 +49,8 @@
 	[System.Diagnostics.DebuggerStepThroughAttribute()]
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://xsd.smev.ru/ppu/guszkh")]
-	public partial class smvGusPodgRazreshVvodExplV2
+	[System.Xml.Serialization.XmlRootAttribute(Namespace = "http://xsd.smev.ru/ppu/guszkh", IsNullable = false)]
+    public partial class smvGusPodgRazreshVvodExplV2
 	{
 
 		private sedECP[] applicantsEcpField;

@@ -7,9 +7,9 @@ namespace DocxFromDotx
     public class RvStatementDocxGus : StatementGenerator.StatementGenerator
     {
         private readonly smvGusPodgRazreshVvodExplV2 _request;
-        public RvStatementDocxGus(string name, IRequest request) : base(name)
+        public RvStatementDocxGus(string name, smvGusPodgRazreshVvodExplV2 request) : base(name)
         {
-            _request = request.Request.smvGusPodgRazreshVvodExplV2;
+            _request = request;
         }
 
         protected override void FillMarks(ReportItems marks)

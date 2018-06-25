@@ -11,3 +11,7 @@ E:\git\docxfromdotx\DocxFromDotx\obj\Debug\netcoreapp2.0\DocxFromDotx.csproj.Gen
 E:\git\docxfromdotx\DocxFromDotx\bin\Debug\netcoreapp2.0\DocxFromDotx.pdb
 E:\git\docxfromdotx\DocxFromDotx\obj\Debug\netcoreapp2.0\DocxFromDotx.dll
 E:\git\docxfromdotx\DocxFromDotx\obj\Debug\netcoreapp2.0\DocxFromDotx.pdb
+E:\git\docxfromdotx\DocxFromDotx\bin\Debug\netcoreapp2.0\StatementGenerator\dotx\GusRs.dotx
+E:\git\docxfromdotx\DocxFromDotx\bin\Debug\netcoreapp2.0\StatementGenerator\dotx\GusRsChange.dotx
+E:\git\docxfromdotx\DocxFromDotx\bin\Debug\netcoreapp2.0\StatementGenerator\dotx\GusRsProlong.dotx
+E:\git\docxfromdotx\DocxFromDotx\bin\Debug\netcoreapp2.0\StatementGenerator\dotx\GusRv.dotx

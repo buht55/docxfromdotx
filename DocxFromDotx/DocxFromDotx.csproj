@@ -12,7 +12,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="StatementGenerator\" />
+    <None Remove="StatementGenerator\dotx\GusRv.dotx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="StatementGenerator\dotx\GusRv.dotx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
@@ -32,6 +38,18 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="StatementGenerator\dotx\GusRs.dotx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="StatementGenerator\dotx\GusRsChange.dotx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="StatementGenerator\dotx\GusRsProlong.dotx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
